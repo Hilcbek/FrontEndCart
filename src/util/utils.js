@@ -24,6 +24,8 @@ export let UploadProfile = async (url) => {
     }
 }
 export let Axios = axios.create({
-    baseURL : 'http://localhost:5000/api',
+    baseURL : 'https://cart-x3vv.onrender.com/api',
     withCredentials : true
 })
+//
+//http://localhost:5000/api
