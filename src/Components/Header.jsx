@@ -53,7 +53,7 @@ export const Header = () => {
                 </ul>
                 <button className='p-3 bg-black text-white rounded-[5px] tracking-widest'>Search</button>
             </ul>
-            <ul className={`${name ? ' w-11/12' : 'w-4/12' }xs:hidden lg:flex items-center justify-end`}>
+            <ul className={`${name ? ' w-11/12' : 'w-4/12' } xs:hidden lg:flex items-center justify-end`}>
                 <li className='relative before:absolute before:left-0 before:-bottom-1 before:content-[""] before:w-0 hover:before:w-full before:bg-black before:transition-all before:ease-linear before:duration-700 before:h-1 before:rounded-lg flex items-center justify-start mx-2'>
                     <Link to={'/'}>
                         Home
