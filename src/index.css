@@ -21,3 +21,6 @@
     border-bottom : solid 1px green;
     font-size : 13px
 }
+.smooth{
+  transition: 2s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}

@@ -68,7 +68,7 @@ export const CartSide = () => {
         else if(String(response).toLocaleLowerCase() === "N") return;
     }
   return (
-    <div className={`${show ? 'right-0' : '-right-[110%]'} z-[99999999] fixed font-Poppins bg-white shadow-xl shadow-zinc-400 p-5 sm:w-[400px] xs:w-full top-0 h-full`}>
+    <div className={`${show ? 'right-0' : '-right-[110%]'} z-[99999999] smooth fixed font-Poppins bg-white shadow-xl shadow-zinc-400 p-5 sm:w-[400px] xs:w-full top-0 h-full`}>
         <div className='flex items-center justify-between'>
             <h1 className='my-3 text-xl font-light'>Products in your cart</h1>
             <li onClick={() => Close()} className='w-10 h-10 rounded-full flex cursor-pointer transition_cubic items-center justify-center bg-black'>
