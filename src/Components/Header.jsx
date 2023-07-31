@@ -44,7 +44,7 @@ export const Header = () => {
             <ul className={`${name ? `${isAdmin ? 'w-6/12' : 'w-7/12'}` : 'w-9/12'} relative mx-5 xs:hidden lg:flex items-center justify-start h-10`}>
                 <input type="text" placeholder='Search Products ...' className='transition-none tracking-wider bg-[#78784b] text-white placeholder:text-white font-Kreon w-full border-solid border-b-black border-t-white border-0 focus:border-t-[2px] focus:border-b-[2px] p-3 outline-none font-semibold' />
                 <button onClick={() => setFilters(!filters)} className='transition-none px-2 mx-2 flex items-center text-white bg-[#78784b] justify-start py-3 border-solid border-black border-0  focus:border-b-[2px] border-l-0'>Filter <BsChevronCompactDown className={`transition-none ml-2 ${filters ? 'rotate-0' : 'rotate-180'}`} /></button>
-                <ul className={`${filters ? 'scale-100' : 'scale-0'} z-[999] bg-white buttons origin-top transition_cubic flex items-start justify-start flex-col absolute top-14 w-40 right-10 p-2 rounded-md shadow-md shadow-zinc-500`}>
+                <ul className={`${filters ? 'scale-100' : 'scale-0'} z-[9999999] bg-white buttons origin-top transition_cubic flex items-start justify-start flex-col absolute top-14 w-40 right-10 p-2 rounded-md shadow-md shadow-zinc-500`}>
                     <li className='w-full my-1 border-solid p-1 border-[#858500] border-b-[1px] tracking-wide cursor-pointer'>Home</li>
                     <li className='w-full my-1 border-solid p-1 border-[#858500] border-b-[1px] tracking-wide cursor-pointer'>About</li>
                     <li className='w-full my-1 border-solid p-1 border-[#858500] border-b-[1px] tracking-wide cursor-pointer'>Services</li>
