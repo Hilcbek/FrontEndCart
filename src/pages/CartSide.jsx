@@ -97,8 +97,8 @@ export const CartSide = () => {
                     <h1 className='my-3 text-xl font-extralight flex items-center justify-start ml-5'><AiOutlineShoppingCart className={'mr-3'} />Empty Cart!</h1>
                 )
             }
-            <div className='flex items-center mt-2 font-light justify-between w-full'>
-                <h1 className='tracking-wide font-semibold text-sm'>SUBTOTAL</h1>
+            <div className='flex items-center my-2 font-light justify-between w-full'>
+                <h1 className='tracking-wide font-light text-3xl'>SUBTOTAL</h1>
                 <p className='font-semibold'>${item ? item[0]?.Total : <ClipLoader color={'#000'} loading={loading} size={21} className='mt-20' aria-label="Loading Spinner" data-testid="loader" />}</p>
             </div>
             <StripeCheckout
