@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*,*::before,*::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: .5s all linear;
+}
+.transition_cubic{
+  /* transition: .6s all cubic-bezier(0.075, 0.82, 0.165, 1);*/
+  transition: .6s all cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.inputUrl{
+    padding : 10px;
+    width : 100%;
+    margin : 5px 0;
+    background : transparent;
+    outline : none;
+    border-bottom : solid 1px green;
+    font-size : 13px
+}
