@@ -6,6 +6,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import {IoClose, IoLogIn, IoLogOut} from 'react-icons/io5'
 import { useDispatch, useSelector } from 'react-redux'
 import { LOGOUT } from '../Redux/User.Reducer'
+import { Axios } from '../util/utils'
 import { setClose } from '../Redux/Cart.Reducer'
 export const Header = () => {
     let { name, profile, isAdmin } = useSelector((state) => state.user )
@@ -21,6 +22,7 @@ export const Header = () => {
     })
     let Logout = () => {
         dispatcher(LOGOUT({}))
+        Axios.put('/auth/logout')
         window.location.replace('/login')
     }
     let MakeVisible = () => {
